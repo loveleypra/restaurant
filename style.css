@@ -6,16 +6,6 @@
     font-family: 'Poppins', sans-serif;
     
 }
-body {
-    overflow-y: scroll;
-}
-body::-webkit-scrollbar {
-    display: none;
-}
-body {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
-}
 #navbar{
     position: sticky;
     top: 0;
