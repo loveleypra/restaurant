@@ -43,10 +43,6 @@ var cart = [];
   });
   
   function checkout() {
-    if (isLoggedIn == false) {
-        alert("Please log in to proceed with checkout.");
-        return;
-      }
     if (cart.length === 0) {
       alert("Your cart is empty!");
       return;
