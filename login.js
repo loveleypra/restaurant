@@ -54,7 +54,8 @@ console.log(app);
         alert(user.email+" Login successfully!!!");
         if(email && password)
         {
-            window.location.replace("index.html");     
+            
+          window.location.replace("index.html");  
         
         }
         else {
@@ -92,3 +93,4 @@ console.log(app);
       signupbtn.classList.remove("dis");
       signinbtn.classList.add("dis");
   }
+  

@@ -11,7 +11,7 @@
     position: sticky;
     top: 0;
     left: 0%;
-    z-index: 100;
+    z-index: 99;
     padding: .5rem 1rem;
     box-shadow: 2px 5px 20px black;
 
@@ -75,10 +75,10 @@ section{
 #food h1{
     font-size: 80px;
     letter-spacing: 2px;
-    font-weight: 800;
+    font-weight: 500;
    text-shadow: #FFF;
-     overflow: hidden;
    color: rgb(241, 234, 234);
+   overflow: hidden;
  
     }
 #food img{
@@ -86,6 +86,8 @@ section{
     margin-top: 10px;
     height: 200px;
     border: 2px  #42f58d;
+    aspect-ratio: 1/1;
+    object-fit: coverS;
 }
 .card{
     width: 250px;
@@ -97,9 +99,19 @@ section{
     border-radius: 10px;
 
 }
+.card button {
+    margin-left: 25%;
+    background: #42f58d;
+    border: none !important;
+}
+.card button:hover {
+    background: #42f58d;
+}
 #foodbtn{
     background-color: #42f58d;
     border: none;
+    display: flex;
+    justify-content: center;
 }
 form {
     display: flex;
@@ -113,9 +125,8 @@ form {
 
   input, textarea {
     padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ccc;
-    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 2px solid#42f58d;
     width: 100%;
     box-sizing: border-box;
   }
@@ -140,4 +151,24 @@ form {
     border-radius: 15px;
     margin: 20px 20%;
 }
+.login{
+    border-bottom: none;
+}
+#sumtbtn{
+    border-radius: 10px;
+    font-size: 20px;
 
+  }
+  #iconcrt{
+ padding-right: 1%;
+ color: #FFF;
+}
+#cart{
+    background-color: #383B39;
+    background-size: cover;
+    background-position:center;
+
+}
+.cart {
+    color: #FFF;
+}
