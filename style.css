@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url(//fonts.googleapis.com/css?family=Vibur);
 *{
     margin: 0;
     padding: 0;
@@ -171,4 +172,63 @@ form {
 }
 .cart {
     color: #FFF;
+}
+
+.logo b{
+    font:  10vh "Vibur";
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #8cff44, 0 0 0.5em #abff44, 0 0 0.1em #5dff44, 0 10px 3px #000;
+  }
+.logo1 b{
+    display: flex;
+    margin-bottom: -10px;
+
+}
+  .logo1 b{
+    font: 20 13vh "Vibur";
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #8cff44, 0 0 0.5em #abff44, 0 0 0.1em #5dff44, 0 10px 3px #000;
+  }
+.logo{
+    position: relative;
+    top: 50px;
+    left: 13px;
+    
+}
+.container-fluid i{
+    position: relative;
+    left: 75px;
+}
+.box{
+    color: white !important;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.cart-count{
+    position: absolute;
+    top: 4px;
+    left: 55px;
+}
+.cartmv{
+    position: fixed;
+    top:55px;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    z-index: 9;
+    overflow-y: scroll;
+    
+}
+.cartmv-active{
+    right:0;
+    transition: 0.5s;
+}
+.cancel i{
+    color: rgb(181, 6, 6) !important;
+    position:absolute;
+    top: 4%;
+   right: 10%;
+   font-size: 30px;
+   cursor: pointer;
 }

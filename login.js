@@ -1,4 +1,7 @@
 
+
+
+  
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
 import { getAuth, signInWithEmailAndPassword,createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
@@ -93,4 +96,3 @@ console.log(app);
       signupbtn.classList.remove("dis");
       signinbtn.classList.add("dis");
   }
-  
