@@ -5,25 +5,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
 }
-
 #navbar{
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0%;
-    z-index: 99;
+    z-index: 100;
     padding: .5rem 1rem;
     box-shadow: 2px 5px 20px black;
-
+    background-color: rgba(20, 20, 20, 0.2);
+    backdrop-filter: blur(2px);
 }
 .navbar .navbar-brand{
     font-size: 20px;
     font-weight: 590;
-    color:#42f58d ;
+    
 }
 #navbarNav a:hover{
-    border-bottom:2px solid #42f58d !important;
+    color: #42f58d;
 }
 #navbarNav a{
     color: #FFF;
@@ -35,20 +34,26 @@
     color: #FFF;
     border-radius: 10px;
 }
-section{
+.navbar-toggler.focus, .navbar-toggler:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    outline: 0;
+    border: 0!important;
+}
+ section{
     width: 100%;
     min-height: 100vh;
     display:flex;
     justify-content: center;
-    align-items: center;
-    
-}
+    align-items: center; 
+} 
 #home{
- background: url(background.jpg);
+ background: url(background-min.jpg);
  background-size: cover;
  background-position:center;
  opacity: 90%;
  flex-direction: column;
+ 
 }
 #home h1{
     font-size: 60px;
@@ -60,11 +65,19 @@ section{
 
 }
 #home p{
+  position: relative;
+    bottom: 60px;
     font-size: 20px;
     color:#42f58d ;
     text-shadow: 0px 1px 0px #fff;
-
 }
+#home .logo img{
+  width: 60vh;
+  filter:contrast(2);
+  animation: fadeIn;
+  animation-duration: 1.5s;
+}
+
 
 /* food */
     #food{
@@ -74,30 +87,39 @@ section{
 
     }
 #food h1{
-    font-size: 80px;
+    font-size: 50px;
     letter-spacing: 2px;
     font-weight: 500;
-   text-shadow: #FFF;
-   color: rgb(241, 234, 234);
-   overflow: hidden;
- 
+    text-shadow: #FFF;
+    color: rgb(241, 234, 234);
+    position: relative;
+    top: 25px;
     }
+.navbar-brand img{
+    background-size: cover;
+    width: 100px;
+    height: 67px;
+    object-fit: cover;
+    left: 0;
+    top: 10px;
+    position: absolute;
+}
 #food img{
-    width: 200px;
-    margin-top: 10px;
+    width: 250px;
     height: 200px;
     border: 2px  #42f58d;
     aspect-ratio: 1/1;
-    object-fit: coverS;
+    object-fit: cover;
 }
 .card{
     width: 250px;
     height: 350px;
-   overflow: hidden;
-   align-items: center;
-   justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
     margin: 20px 50px;
     border-radius: 10px;
+    background-color: #383B39;
 
 }
 .card button {
@@ -165,10 +187,8 @@ form {
  color: #FFF;
 }
 #cart{
-    background-color: #383B39;
     background-size: cover;
     background-position:center;
-
 }
 .cart {
     color: #FFF;
@@ -204,6 +224,7 @@ form {
     text-align: center;
     position: relative;
     cursor: pointer;
+    
 }
 .cart-count{
     position: absolute;
@@ -218,7 +239,14 @@ form {
     height: 100vh;
     z-index: 9;
     overflow-y: scroll;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    background-color: #1d1d23;
+    border-radius: 10px;
     
+}
+.cartmv h2{
+    color: #000;
 }
 .cartmv-active{
     right:0;
@@ -227,8 +255,8 @@ form {
 .cancel i{
     color: rgb(181, 6, 6) !important;
     position:absolute;
-    top: 4%;
-   right: 10%;
-   font-size: 30px;
-   cursor: pointer;
+    top: 3%;
+    right: 10%;
+    font-size: 30px;
+    cursor: pointer;
 }

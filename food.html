@@ -13,11 +13,13 @@
 </head>
 <body>
    <!-- nav bar -->
-   <nav class="navbar navbar-expand-lg bg-body-tertiary"data-bs-theme="dark" id="navbar">
+   <nav class="navbar navbar-expand-lg bg-transparant bg-opacity: 5; d-flex w-100 "data-bs-theme="dark" id="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand " >Food</a>
+      <a class="navbar-brand" href="#">
+        <img src="Rlogo1.png" style=" max-height: 40px">
+      </a>
       <div class="box">
-      <a class="navbar-brand " ><i class="fa-solid fa-cart-shopping" id="btn1"></i></a>
+      <a class="navbar-brand" ><i class="fa-solid fa-cart-shopping" id="btn1"></i></a>
       <span class="cart-count">0</span>
     </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +31,7 @@
             <a class="nav-link active" aria-current="page"  href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="food.html">Foods</a>
+            <a class="nav-link" href="#">Foods</a>
           </li>
         </ul><a class="login"href="login.html">    
         <button class="btn p-2 my-2" type="button" id="btn1" >login</button></a>
@@ -38,7 +40,7 @@
   </nav>
   <div class="cartmv ">
     <div id="cart" class="p-2">
-      <h2 class="text-center my-3 text-light"><i class="fa-solid fa-cart-shopping" id="iconcrt"></i>Cart</h2>
+      <h2 class="text-center my-3 text-light"></i>YOUR ORDERS</h2>
       <div class="cancel">
         <i class="fa-solid fa-xmark"></i>
       </div>
@@ -57,7 +59,7 @@
     <!-- food -->
     <section id="food">
         <div class="container m-3">
-        <h1 class="text-center my-3"> Food items</h1>
+        <h1 class="text-center my-3 ">Food items</h1>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-12">
                 <div class="card" >
@@ -70,7 +72,7 @@
                   </div>
                   <div class="col-lg-4 col-md-4 col-12">
                     <div class="card" >
-                        <img src="donut.jpg" class="card-img-top">
+                        <img src="dount1.png" class="card-img-top">
                         <div class="card-body">
                           <h5 class="card-title">Donut &#8377 30</h5>
                           <button class="btn btn-primary add-to-cart" data-name="Donut" data-price="30">Add </button>
@@ -112,16 +114,11 @@
                                           <button class="btn btn-primary add-to-cart" data-name="Soup" data-price="30">Add </button>
                                         </div>
                                     </div>
-                                      </div>                
+                                      </div>
+                                 
                                </div>
-                            </div>                              
-     </section>
-
-                                           <!-- cart -->
-
-    
-                                           <!-- end cart -->
-  
+                            </div>                             
+     </section>  
 </body>
 <script type="module" src="home.js"></script>
 </html>
